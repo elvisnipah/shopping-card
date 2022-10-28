@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'karla': ['Karla', 'sans-serif'],
+        "montserrat": ["Montserrat", "sans-serif"] 
+      },
+    },
   },
   plugins: [],
 }
