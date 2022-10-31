@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Card() {
+function Card(props) {
   return (
-    <div>Card</div>
+    <div>
+      <img src={props.src} alt="" />
+      <p>{props.name}</p>
+      <p>{props.price}</p>
+    </div>
   )
 }
 
