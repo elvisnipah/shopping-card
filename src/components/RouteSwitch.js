@@ -3,12 +3,12 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Main from './Main'
 import Shop from './Shop'
 
-function RouteSwitch() {
+function RouteSwitch(props) {
   return (
     <BrowserRouter> 
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop" element={<Shop data={props.data}/>} />
       </Routes>
     </BrowserRouter>
   )

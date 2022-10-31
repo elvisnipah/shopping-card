@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card(props) {
   return (
-    <div>
+    <div className=''>
       <img src={props.src} alt="" />
       <p>{props.name}</p>
       <p>{props.price}</p>
