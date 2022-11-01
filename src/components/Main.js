@@ -10,7 +10,7 @@ function Main() {
         <img src={macbookImage} alt="" className='h-[300px]'/>
         <img src={iPhone} alt="" className='h-[300px]'/>
       </div>
-      <button className='bg-lime-300 h-10 mt-10 text-xl p-7 text-center flex items-center rounded-lg hover:bg-lime-600 font-semibold'>Shop Now</button>
+      <a href="/shop"><button className='bg-lime-300 h-10 mt-10 text-xl p-7 text-center flex items-center rounded-lg hover:bg-lime-600 font-semibold'>Shop Now</button></a>
     </div>
     
   )

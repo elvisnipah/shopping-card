@@ -8,7 +8,7 @@ function RouteSwitch(props) {
     <BrowserRouter> 
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/shop" element={<Shop data={props.data}/>} />
+        <Route path="/shop" element={<Shop data={props.data} addToCart={props.addToCart}/>} />
       </Routes>
     </BrowserRouter>
   )

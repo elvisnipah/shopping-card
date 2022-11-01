@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 
 function Shop(props) {
-  console.log(props.data)
+  
   const data = props.data
   const shopData = data.map(item => {
     return (
@@ -10,11 +10,14 @@ function Shop(props) {
         src={item.src}
         price={item.price}
         name={item.name}
+        key={item.id}
+        id={item.id}
+        addToCart={props.addToCart}
       />
     )
   })
   return (
-    <div>
+    <div className='flex flex-row justify-center items-center gap-10 flex-wrap'>
       {shopData}
     </div>
   )
