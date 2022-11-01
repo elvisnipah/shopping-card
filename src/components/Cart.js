@@ -8,7 +8,9 @@ function Cart(props) {
     count += cartData[i].quantity
   }
   return (
-    <div className='px-3 flex bg-gray-500 justify-center items-center rounded-xl mr-2'>
+    <div 
+      className='px-3 flex bg-gray-500 justify-center items-center rounded-xl mr-2 cursor-pointer hover:bg-orange-500' 
+      onClick={props.logCart}>
       <img src={cart} alt="" className='h-5'/>
       {count}
     </div>
